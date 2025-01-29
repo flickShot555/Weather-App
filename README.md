@@ -10,16 +10,26 @@ A simple Python-based Weather App that fetches real-time weather data using Open
 - 🛠️ Simple and easy-to-use design.
 
 ## 📂 Project Structure
-weather_app/ 
+weather_app/
+
 │── venv/               # Virtual environment
+
 │── src/                # Source code
+
 │ ├── main.py           # CLI version
+
 │ ├── gui.py            # Tkinter GUI version
+
 │ ├── webapp.py         # Flask web version
+
 │ ├── weather_api.py    # API call module
+
 │── templates/          # HTML templates
+
 │── requirements.txt    # Dependencies
+
 │── README.md           # Documentation
+
 │── .gitignore          # Ignore unnecessary files
 
 
@@ -43,15 +53,15 @@ weather_app/
    running Web version
    python src/webapp.py
 
-🌍 API Key Setup
+##🌍 API Key Setup
     This app uses OpenWeatherMap API. Get your free API key from OpenWeatherMap and replace 'your_api_key_here' in 'weather_api.py'.
 
-📜 License
+##📜 License
     This project is licensed under the MIT License.
 
-📬 Contact
+##📬 Contact
     Created by Abbas Khan
     www.aepostrophee.kesug.com
     
-    – Feel free to reach out!
+    Feel free to reach out!
 

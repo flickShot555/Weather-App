@@ -1,13 +1,15 @@
-from weather_api import get_weather
+from weather_api import get_weather_data
 
 def main():
-    city = input("Enter city name: ")
-    weather = get_weather(city)
-    
+    lat = input("Enter latitude: ")
+    lon = input("Enter longitude: ")
+    weather = get_weather_data(lat, lon)
+
     if "error" in weather:
-        print(weather["error"])
+        print("Error fetching weather data:", weather["error"])
     else:
-        print(f"Weather in {weather['city']}: {weather['weather']}, {weather['temperature']}°C")
+        print(f"Temperature: {weather['temperature']}°C")
+        print(f"Windspeed: {weather['windspeed']} km/h")
 
 if __name__ == "__main__":
     main()

@@ -1,18 +1,12 @@
 import requests
 
-API_KEY = "your_api_key_here"  # Replace with your OpenWeatherMap API key
-BASE_URL = "http://api.openweathermap.org/data/2.5/weather"
-
-def get_weather(city):
-    params = {"q": city, "appid": API_KEY, "units": "metric"}
-    response = requests.get(BASE_URL, params=params)
-    data = response.json()
+def get_weather_data(lat, lon):
+    """Fetch weather data from Open-Meteo API"""
+    url = f"https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&current_weather=true"
     
-    if response.status_code == 200:
-        return {
-            "city": data["name"],
-            "temperature": data["main"]["temp"],
-            "weather": data["weather"][0]["description"]
-        }
-    else:
-        return {"error": "City not found"}
+    try:
+        response = requests.get(url)
+        data = response.json()
+        return data["current_weather"]
+    except Exception as e:
+        return {"error": str(e)}

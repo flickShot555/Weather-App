@@ -6,18 +6,13 @@
     <title>Weather App</title>
 </head>
 <body>
-    <h1>Weather App</h1>
-    <form method="POST">
-        <input type="text" name="city" placeholder="Enter city name">
+    <h2>Weather App</h2>
+    <form action="/weather" method="get">
+        <label for="lat">Latitude:</label>
+        <input type="text" id="lat" name="lat" required>
+        <label for="lon">Longitude:</label>
+        <input type="text" id="lon" name="lon" required>
         <button type="submit">Get Weather</button>
     </form>
-
-    {% if weather %}
-        {% if "error" in weather %}
-            <p>{{ weather.error }}</p>
-        {% else %}
-            <p>Weather in {{ weather.city }}: {{ weather.weather }}, {{ weather.temperature }}°C</p>
-        {% endif %}
-    {% endif %}
 </body>
 </html>

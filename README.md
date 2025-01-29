@@ -11,15 +11,25 @@ A simple Python-based Weather App that fetches real-time weather data using Open
 
 ## 📂 Project Structure
 weather_app/ 
+
 │── venv/               # Virtual environment
+
 │── src/                # Source code
+
 │ ├── main.py           # CLI version
+
 │ ├── gui.py            # Tkinter GUI version
+
 │ ├── webapp.py         # Flask web version
+
 │ ├── weather_api.py    # API call module
+
 │── templates/          # HTML templates
+
 │── requirements.txt    # Dependencies
+
 │── README.md           # Documentation
+
 │── .gitignore          # Ignore unnecessary files
 
 

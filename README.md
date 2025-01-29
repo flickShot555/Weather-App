@@ -44,22 +44,22 @@ weather_app/
 
    pip install -r requirements.txt
 
-   running CLI Version:
+   # running CLI Version:
    python src/main.py
 
-   running GUI Version:
+   #nrunning GUI Version:
    python src/gui.py
 
-   running Web version
+   # running Web version
    python src/webapp.py
 
-🌍 API Key Setup
+## 🌍 API Key Setup
     This app uses OpenWeatherMap API. Get your free API key from OpenWeatherMap and replace 'your_api_key_here' in 'weather_api.py'.
 
-📜 License
+## 📜 License
     This project is licensed under the MIT License.
 
-📬 Contact
+## 📬 Contact
     Created by Abbas Khan
     www.aepostrophee.kesug.com
     

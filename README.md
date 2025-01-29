@@ -43,15 +43,15 @@ weather_app/
    running Web version
    python src/webapp.py
 
-🌍 API Key Setup
+## 🌍 API Key Setup
     This app uses OpenWeatherMap API. Get your free API key from OpenWeatherMap and replace 'your_api_key_here' in 'weather_api.py'.
 
-📜 License
+## 📜 License
     This project is licensed under the MIT License.
 
-📬 Contact
+## 📬 Contact
     Created by Abbas Khan
     www.aepostrophee.kesug.com
     
-    – Feel free to reach out!
+    Feel free to reach out!
 
